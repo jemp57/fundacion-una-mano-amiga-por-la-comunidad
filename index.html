@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDAUMAC | Fundación Una Mano Amiga Por La Comunidad</title>
+    <!-- Tipografía Moderna y Redondeada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header>
+        <div class="logo-container">
+            <span class="logo-text">FUNDAUMAC</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#donaciones">Donaciones</a></li>
+                <li><a href="#transparencia">Transparencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Botón Directo en el Menú -->
+        <a href="#donaciones" class="btn-nav-donate">Dona Aquí</a>
+    </header>
+
+    <!-- Sección de Bienvenida (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Apoyando vidas, <br><span class="highlight">Sembrando esperanza 🫱🏼‍🫲🏽🌱</span></h1>
+            <p>Trabajamos desde el corazón de Santa Marta para transformar realidades y construir un futuro con dignidad, equidad y justicia social.</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+                <a href="#donaciones" class="btn-donate-hero">Dona Aquí</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="nosotros" class="about-section">
+        <h2>Quiénes Somos</h2>
+        <p class="section-subtitle">Unidos por el fortalecimiento y la inclusión comunitaria.</p>
+        
+        <div class="about-text-block">
+            <p>Somos una Fundación comprometida con transformar vidas y construir un mejor futuro para las comunidades vulnerables. Trabajamos desde el corazón de Santa Marta para brindar oportunidades en educación, empleo, recreación y cultura, promoviendo la inclusión y el fortalecimiento de los valores.</p>
+        </div>
+
+        <div class="grid-mision-vision">
+            <div class="card-mv">
+                <h3>Nuestra Misión</h3>
+                <p>Ser una mano amiga para quienes más lo necesitan, rescatando tradiciones, fomentando la convivencia y ofreciendo herramientas que impulsan el desarrollo comunitario.</p>
+            </div>
+            <div class="card-mv">
+                <h3>Nuestra Visión</h3>
+                <p>Aspiramos a construir un futuro donde todas las personas tengan acceso a oportunidades que les permitan mejorar sus medios de vida, fortalecer su identidad cultural y vivir con dignidad, equidad y justicia social.</p>
+            </div>
+        </div>
+
+        <div class="about-footer-text">
+            <p><strong>Nuestro Compromiso:</strong> Actuar como agentes de cambio y esperanza para las comunidades, trabajando incansablemente para mejorar sus medios de vida con absoluta transparencia, respeto y solidaridad. Creemos firmemente en el poder de la acción colectiva.</p>
+        </div>
+    </section>
+
+    <!-- Sección Líneas de Acción y Proyectos -->
+    <section id="proyectos" class="projects-section">
+        <h2>Proyectos en Desarrollo</h2>
+        <p class="section-subtitle">Conoce nuestras iniciativas vigentes y súmate al cambio.</p>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">📚</div>
+                <h3>Formación Cultural y Educativa</h3>
+                <p>Impulsamos el talento local a través de talleres artísticos, rescate de tradiciones dancísticas y acompañamiento educativo integral.</p>
+                <button class="btn-donate" onclick="openDonationModal('Formación Cultural y Educativa')">Apoyar este proyecto</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">🌳</div>
+                <h3>Desarrollo Ambiental Comunitario</h3>
+                <p>Iniciativas ecológicas enfocadas en reforestación urbana, talleres de reciclaje y cuidado del entorno natural de nuestros sectores.</p>
+                <button class="btn-donate" onclick="openDonationModal('Desarrollo Ambiental Comunitario')">Apoyar este proyecto</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">🤝</div>
+                <h3>Inclusión y Tejido Social</h3>
+                <p>Programas enfocados en la dotación de herramientas productivas y fomento de la sana convivencia en comunidades vulnerables.</p>
+                <button class="btn-donate" onclick="openDonationModal('Inclusión y Tejido Social')">Apoyar este proyecto</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Apartado Exclusivo de Donaciones -->
+    <section id="donaciones" class="donation-page-section">
+        <div class="donation-container">
+            <h2>Haz una Donación</h2>
+            <p class="section-subtitle">Tu apoyo financiero nos permite adquirir materiales, sostener los talleres gratuitos y expandir nuestro impacto en Santa Marta.</p>
+            
+            <div class="donation-methods-box">
+                <div class="method-card">
+                    <div class="method-icon">💳</div>
+                    <h3>Aporte General Institucional</h3>
+                    <p>Apoya el sostenimiento general de FUNDAUMAC y la logística comunitaria diaria.</p>
+                    <button class="btn-confirm-donation" onclick="openDonationModal('Aporte General Institucional')">Donar a la Fundación</button>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">📲</div>
+                    <h3>Otros Métodos de Transferencia</h3>
+                    <p>Si prefieres coordinar una donación en especie (útiles, herramientas, refrigerios) o transferencias directas, comunícate con nuestra central.</p>
+                    <a href="https://wa.me/573043175622?text=Hola%20FUNDAUMAC,%20deseo%20coordinar%20una%20donación%20o%20transferencia" target="_blank" class="btn-whatsapp-subtle">Coordinar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Transparencia -->
+    <section id="transparencia" class="transparency-section">
+        <h2>Gestión y Transparencia</h2>
+        <p class="section-subtitle">Garantizamos el uso responsable y claro de cada recurso aportado.</p>
+        <div class="transparency-box">
+            <p>En cumplimiento de nuestras políticas institucionales, ponemos a disposición del público general y de las autoridades competentes nuestros estados financieros, actas de constitución y documentos de gestión legal.</p>
+            <div class="docs-links">
+                <a href="#" class="doc-item">📄 Certificación de Existencia Legal (Cámara de Comercio).pdf</a>
+                <a href="#" class="doc-item">📊 Informe de Gestión Anual.pdf</a>
+                <a href="#" class="doc-item">📋 Estatutos Fundacionales FUNDAUMAC.pdf</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section">
+        <h2>Contacto y Alianzas</h2>
+        <p class="section-subtitle">¿Deseas proponer una alianza o unirte como voluntario? ¡Escríbenos!</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Información Institucional</h3>
+                <p><strong>📍 Dirección:</strong> Calle 106 #16-23, Barrio La Paz - Sector La Victoria, Santa Marta, Magdalena, Colombia.</p>
+                <p><strong>📧 Correo Electrónico:</strong> fundacionuma.ong@gmail.com</p>
+                <p><strong>📞 Teléfono:</strong> +57 304-3175622</p>
+                <p class="info-note"><em>* La fundación podrá cambiar su domicilio cuando las circunstancias así lo requieran, informando debidamente a las autoridades competentes.</em></p>
+            </div>
+            
+            <div class="contact-actions">
+                <h3>Canales Directos</h3>
+                <p>Haz clic para comunicarte inmediatamente con nuestra coordinación central:</p>
+                <a href="https://wa.me/573043175622?text=Hola%20FUNDAUMAC,%20quiero%20coordinar%20una%20alianza" target="_blank" class="btn-whatsapp">Escribir al WhatsApp Institucional</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interfaz / Ventana de Donación (Modal Central) -->
+    <div id="donationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDonationModal()">&times;</span>
+            <h3>Sembrar Esperanza Hoy 🌱</h3>
+            <p>Estás eligiendo apoyar el programa:</p>
+            <div id="selectedProjectName" class="project-tag"></div>
+            <p class="modal-instruction">Serás redirigido a nuestra central de aportes con la anotación correspondiente a tu selección.</p>
+            
+            <a href="https://wa.me/573043175622?text=Hola%20FUNDAUMAC," id="donationSubmitBtn" target="_blank" class="btn-confirm-donation">Confirmar y Continuar</a>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 FUNDAUMAC - Fundación Una Mano Amiga Por La Comunidad. <br> Santa Marta, Colombia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function openDonationModal(projectName) {
+            document.getElementById('donationModal').style.display = 'flex';
+            document.getElementById('selectedProjectName').innerText = projectName;
+            
+            const baseText = "Hola FUNDAUMAC, deseo realizar un aporte para: ";
+            const encodedText = encodeURIComponent(baseText + projectName);
+            document.getElementById('donationSubmitBtn').href = "https://wa.me/573043175622?text=" + encodedText;
+        }
+
+        function closeDonationModal() {
+            document.getElementById('donationModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('donationModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

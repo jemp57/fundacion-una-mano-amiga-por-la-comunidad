@@ -1,0 +1,422 @@
+/* Paleta de Colores Oficial FUNDAUMAC */
+:root {
+    --primary-blue: #476C9B;      /* Azul Oscuro Principal */
+    --light-blue: #ACD2ED;        /* Azul Claro Suave */
+    --accent-purple: #C19AB7;     /* Lila */
+    --accent-green: #06D6A0;      /* Verde Acento para Donaciones */
+    --accent-yellow: #F3DE8A;     /* Amarillo Detalle */
+    --pure-white: #FFFFFF;        /* Fondo Base Limpio */
+    --soft-gray: #F8FAFC;         /* Fondos muy sutiles */
+    --text-dark: #2C3E50;         /* Texto formal y legible */
+    --text-muted: #5A6B7C;
+}
+
+/* Estilos de Reinicio Generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--pure-white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Encabezado y Menú */
+header {
+    background-color: var(--pure-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-blue);
+}
+
+/* Botón Destacado en Menú */
+.btn-nav-donate {
+    background-color: var(--accent-green);
+    color: var(--pure-white);
+    text-decoration: none;
+    padding: 8px 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+.btn-nav-donate:hover {
+    transform: scale(1.05);
+}
+
+/* Configuración de Secciones Comunes */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    color: var(--primary-blue);
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+/* Sección de Bienvenida (Hero) */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('https://picsum.photos/1200/800') no-repeat center center/cover;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10%;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: var(--pure-white);
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(71, 108, 155, 0.3);
+}
+
+.btn-donate-hero {
+    background-color: var(--accent-green);
+    color: var(--pure-white);
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: transform 0.2s;
+}
+
+.btn-donate-hero:hover {
+    transform: translateY(-2px);
+}
+
+/* Sección Nosotros */
+.about-section {
+    background-color: var(--soft-gray);
+}
+
+.about-text-block {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    font-size: 1.15rem;
+    text-align: justify;
+}
+
+.grid-mision-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.card-mv {
+    background-color: var(--pure-white);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    border-top: 5px solid var(--light-blue);
+    text-align: left;
+}
+
+.card-mv h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Sección Proyectos */
+.projects-section {
+    background-color: var(--pure-white);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: var(--soft-gray);
+    padding: 35px 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(172, 210, 237, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-donate {
+    background-color: var(--accent-green);
+    color: var(--pure-white);
+    border: none;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Estilos de la Nueva Sección de Donaciones */
+.donation-page-section {
+    background-color: var(--soft-gray);
+}
+
+.donation-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.donation-methods-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.method-card {
+    background-color: var(--pure-white);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 4px solid var(--light-blue);
+}
+
+.method-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.method-card h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.method-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.btn-whatsapp-subtle {
+    display: inline-block;
+    background-color: var(--pure-white);
+    color: #25D366;
+    border: 2px solid #25D366;
+    text-decoration: none;
+    padding: 10px 22px;
+    font-weight: 700;
+    border-radius: 25px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-whatsapp-subtle:hover {
+    background-color: #25D366;
+    color: white;
+}
+
+/* Sección Transparencia */
+.transparency-section {
+    background-color: var(--pure-white);
+}
+
+.transparency-box {
+    max-width: 750px;
+    margin: 0 auto;
+    background: var(--soft-gray);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.docs-links {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.doc-item {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--pure-white);
+}
+
+/* Sección Contacto */
+.contact-section {
+    background-color: var(--soft-gray);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+/* El Modal Interactivo (Ventana de Donación) */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 62, 80, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: var(--pure-white);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.project-tag {
+    background-color: var(--light-blue);
+    color: var(--text-dark);
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.btn-confirm-donation {
+    display: inline-block;
+    background-color: var(--accent-green);
+    color: var(--pure-white);
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Pie de Página */
+footer {
+    background-color: var(--primary-blue);
+    color: var(--pure-white);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
